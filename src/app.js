@@ -1,4 +1,4 @@
-class Computed {
+export default class Computed {
 
     constructor(target, handlersObj) {
         this.target = target;
