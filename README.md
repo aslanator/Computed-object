@@ -11,6 +11,7 @@ const computedFunctions = {
         return this.expenses.reduce((sum, cost) => cost + sum);
     }
 };
+const computedObject = new Computed(baseObject, computedFunctions);
 let sum = computedObject.expensesSum; // 1400, recalculated
 ...
 let sum = computedObject.expensesSum; // 1400, not recalculated
